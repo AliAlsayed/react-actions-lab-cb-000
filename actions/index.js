@@ -2,6 +2,13 @@
 
 function addColumn (ev) {
   ev.preventDefault()
+  var newTable = this.state.table
+  for(var i = 0; i < newTable.length; i++){
+    newTable[i].push("")
+  }
+  this.setState({
+    table: newTable
+  })
 }
 
 function addRow (ev) {
