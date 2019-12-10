@@ -11,7 +11,7 @@ export default class Table extends React.Component {
           {
             this.props.table.map((value, i) =>
               <Row
-                key={i} 
+                key={i}
                 row={value}
                 onChange={this.props.onChange.bind(null, i)}
                 onFocus={this.props.onFocus.bind(null, i)}
