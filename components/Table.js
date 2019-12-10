@@ -13,8 +13,8 @@ export default class Table extends React.Component {
               <Row
                 key={i}
                 row={value}
-                onChange={this.props.onChange}
-                onFocus={this.props.onFocus}
+                onChange={this.props.onChange.bind(null, i)}
+                onFocus={this.props.onFocus.bind(null, i)}
               />
             )
           }
