@@ -37,7 +37,7 @@ export default class Spreadsheet extends React.Component {
           <button onClick={this.handleRemoveRow}>Remove Row</button>
         </div>
 
-        <Table 
+        <Table
           table={this.state.table}
           onFocus={this.handleFocusCell}
           onChangeCell={this.handleChangeCell}
