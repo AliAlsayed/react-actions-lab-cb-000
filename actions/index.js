@@ -54,7 +54,7 @@ function removeColumn (ev) {
   if (this.state.focused){
     var col_index = this.state.focused[1]
     for(var i = 0; i < newTable.length; i++){
-      newTable[i].pop(col_index)
+      newTable[i].pop()
     }
     this.setState({
       table: newTable
