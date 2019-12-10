@@ -47,9 +47,7 @@ function blurCell () {
 function removeRow (ev) {
   ev.preventDefault()
   var newTable = this.state.table
-  if(this.state.focused){
-    newTable.pop(this.state.focused[0])
-  }
+  newTable.pop()
   this.setState({
     table: newTable
   })
