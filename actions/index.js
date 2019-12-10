@@ -44,13 +44,13 @@ function removeRow (ev) {
 function removeColumn (ev) {
   ev.preventDefault()
   var col_index = this.focused[1]
-  // var newTable = this.state.table
-  // for(var i = 0; i < newTable.length; i++){
-  //   newTable[i].pop()
-  // }
-  // this.setState({
-  //   table: newTable
-  // })
+  var newTable = this.state.table
+  for(var i = 0; i < newTable.length; i++){
+    newTable[i].pop(col_index)
+  }
+  this.setState({
+    table: newTable
+  })
 }
 
 export default {
