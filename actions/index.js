@@ -58,8 +58,7 @@ function removeRow (ev) {
 function removeColumn (ev) {
   ev.preventDefault()
   var newTable = this.state.table
-  if (this.state.focused){
-    var col_index = this.state.focused[1]
+  if (this.state.table[0].length > 1){
     for(var i = 0; i < newTable.length; i++){
       newTable[i].pop()
     }
