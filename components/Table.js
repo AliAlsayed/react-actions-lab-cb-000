@@ -10,10 +10,10 @@ export default class Table extends React.Component {
         <tbody>
           {
             this.props.table.map((value, i) =>
-              <Row 
+              <Row
                 key={i} 
                 row={value}
-                
+
               />
             )
           }
