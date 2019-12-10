@@ -12,8 +12,8 @@ export default class Row extends React.Component {
             <Cell
               key={i}
               cell={value}
-              onChange={this.props.onChange.bind(null, i)}
-              onFocus={this.props.onFocus.bind(null, i)}
+              onChange={this.props.onChange}
+              onFocus={this.props.onFocus.bind}
             />
           )
         }
