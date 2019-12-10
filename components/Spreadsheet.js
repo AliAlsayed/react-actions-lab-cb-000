@@ -41,7 +41,7 @@ export default class Spreadsheet extends React.Component {
           table={this.state.table}
           onFocus={this.handleFocusCell}
           onChange={this.handleChangeCell}
-          
+
         />
 
         <div className='spreadsheet__focused'>
