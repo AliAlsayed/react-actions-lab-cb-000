@@ -7,12 +7,12 @@ export default class Table extends React.Component {
   render () {
     return (
       <table className='table'>
-        <tbody>
-          {
-            this.props.table.map((value, index) =>{
-              <Cell />
-            })
-          }
+        // <tbody>
+        //   {
+        //     this.props.table.map((value, index) =>{
+        //       <Cell />
+        //     })
+        //   }
         </tbody>
       </table>
     )
