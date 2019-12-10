@@ -9,7 +9,12 @@ export default class Row extends React.Component {
       <tr className='row'>
         {
           this.props.row.map((value, i) =>
-            <Cell key={i} cell={value} />
+            <Cell 
+              key={i} 
+              cell={value}
+              onChange={this.props.onChange.bind(null, columnIndex)}
+              onFocus={this.props.onFocus.bind(null, columnIndex)} 
+            />
           )
         }
       </tr>
