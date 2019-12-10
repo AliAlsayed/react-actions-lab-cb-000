@@ -10,7 +10,7 @@ export default class Table extends React.Component {
         <tbody>
           {
             this.props.table.map((value, index) =>{
-              return <Cell />
+              <Cell />
             })
           }
         </tbody>
