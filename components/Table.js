@@ -5,12 +5,12 @@ import Row from './Row';
 
 export default class Table extends React.Component {
   render () {
-    const table = this.props.table
+    const table = 
     return (
       <table className='table'>
         <tbody>
           {
-            table.map((value, index) =>{
+            this.props.table.map((value, index) =>{
               <Cell />
             })
           }
