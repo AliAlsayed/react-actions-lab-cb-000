@@ -6,10 +6,11 @@ import Row from './Row';
 export default class Table extends React.Component {
   render () {
     return (
+      const table = this.props.table
       <table className='table'>
         <tbody>
           {
-            this.props.table.map((value, index) => {
+            table.map((value, index) => {
               <Row />
             })
           }
