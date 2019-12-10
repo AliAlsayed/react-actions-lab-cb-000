@@ -4,5 +4,9 @@ import React from 'react';
 
 export default class Cell extends React.Component {
   render () {
+    return (
+      <td className='cell'><input></input></td>
+    )
+
   }
 }
