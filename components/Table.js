@@ -6,7 +6,7 @@ import Row from './Row';
 export default class Table extends React.Component {
   render () {
     return (
-      <table className='table'>
+      <table className='table' onBlur={this.props.onBlur}>
         <tbody>
           {
             this.props.table.map((value, i) =>
