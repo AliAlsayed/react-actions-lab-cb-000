@@ -5,7 +5,6 @@ import Row from './Row';
 
 export default class Table extends React.Component {
   render () {
-    const table = 
     return (
       <table className='table'>
         <tbody>
