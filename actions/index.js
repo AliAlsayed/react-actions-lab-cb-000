@@ -46,11 +46,13 @@ function blurCell () {
 
 function removeRow (ev) {
   ev.preventDefault()
-  var newTable = this.state.table
-  newTable.pop()
-  this.setState({
-    table: newTable
-  })
+  if (this.state.table.length > 1){
+    var newTable = this.state.table
+    newTable.pop()
+    this.setState({
+      table: newTable
+    })
+  }
 }
 
 function removeColumn (ev) {
